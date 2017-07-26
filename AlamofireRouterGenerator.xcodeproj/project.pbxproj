@@ -13,13 +13,13 @@
 		865B7B7D1F27216200369B64 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B7B7C1F27216200369B64 /* HTTPMethod.swift */; };
 		865B7B801F27260000369B64 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B7B7F1F27260000369B64 /* StringExt.swift */; };
 		865B7B821F272BD600369B64 /* HTTPBodyMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B7B811F272BD600369B64 /* HTTPBodyMode.swift */; };
+		865F62C41F28674900C007A3 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F62C31F28674900C007A3 /* NetworkRouter.swift */; };
 		86639D371F18D1410070722A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86639D361F18D1410070722A /* AppDelegate.swift */; };
 		86639D391F18D1410070722A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86639D381F18D1410070722A /* ViewController.swift */; };
 		86639D3B1F18D1410070722A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86639D3A1F18D1410070722A /* Assets.xcassets */; };
 		86639D3E1F18D1410070722A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86639D3C1F18D1410070722A /* Main.storyboard */; };
 		86639D461F18E1960070722A /* PostmanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86639D451F18E1960070722A /* PostmanModel.swift */; };
 		86639D4B1F18F1DA0070722A /* NSTextViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86639D4A1F18F1DA0070722A /* NSTextViewExt.swift */; };
-		86BD604F1F277525008CAC24 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BD604E1F277525008CAC24 /* NetworkRouter.swift */; };
 		FC380D1C88DE7D9C7624A2E7 /* Pods_AlamofireRouterGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2FE8117C28A44A66FB6E40 /* Pods_AlamofireRouterGenerator.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +32,7 @@
 		865B7B7C1F27216200369B64 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		865B7B7F1F27260000369B64 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		865B7B811F272BD600369B64 /* HTTPBodyMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPBodyMode.swift; sourceTree = "<group>"; };
+		865F62C31F28674900C007A3 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		86639D331F18D1410070722A /* AlamofireRouterGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireRouterGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86639D361F18D1410070722A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86639D381F18D1410070722A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 		86639D3F1F18D1410070722A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86639D451F18E1960070722A /* PostmanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostmanModel.swift; sourceTree = "<group>"; };
 		86639D4A1F18F1DA0070722A /* NSTextViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTextViewExt.swift; sourceTree = "<group>"; };
-		86BD604E1F277525008CAC24 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		F14699EE4F0C3634DFF4BC44 /* Pods-AlamofireRouterGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireRouterGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireRouterGenerator/Pods-AlamofireRouterGenerator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,8 +99,8 @@
 				86639D361F18D1410070722A /* AppDelegate.swift */,
 				86639D381F18D1410070722A /* ViewController.swift */,
 				862297601F26262F0039D562 /* Generator.swift */,
+				865F62C31F28674900C007A3 /* NetworkRouter.swift */,
 				86639D451F18E1960070722A /* PostmanModel.swift */,
-				86BD604E1F277525008CAC24 /* NetworkRouter.swift */,
 				865B7B7E1F2722E700369B64 /* Structures */,
 				86639D471F18F1AC0070722A /* Extensions */,
 				86639D3A1F18D1410070722A /* Assets.xcassets */,
@@ -252,7 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				865B7B821F272BD600369B64 /* HTTPBodyMode.swift in Sources */,
-				86BD604F1F277525008CAC24 /* NetworkRouter.swift in Sources */,
+				865F62C41F28674900C007A3 /* NetworkRouter.swift in Sources */,
 				865B7B801F27260000369B64 /* StringExt.swift in Sources */,
 				865B7B7D1F27216200369B64 /* HTTPMethod.swift in Sources */,
 				86639D4B1F18F1DA0070722A /* NSTextViewExt.swift in Sources */,

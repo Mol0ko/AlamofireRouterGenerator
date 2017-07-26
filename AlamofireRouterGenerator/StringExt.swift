@@ -41,11 +41,12 @@ extension String {
     }
     
     func getQueryStringWithoutParameters() -> String {
-        guard let url = URLComponents(string: self) else {
+        guard let url = URL(string: self) else {
             return ""
         }
-        if let sheme = url.scheme, let host = url.host, let path = url.url?.path {
-            return sheme + "://" + host + path
+        
+        if let sheme = url.scheme, let host = url.host {
+            return sheme + "://" + host + url.path
         }
         
         return ""

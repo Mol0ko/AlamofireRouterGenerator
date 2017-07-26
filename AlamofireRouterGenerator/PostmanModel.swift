@@ -44,8 +44,12 @@ class ItemResponse: Mappable {
     var name: String?
     var request: RequestResponse?
     var item: [ItemResponse]?
+    var isSubFolder: Bool?
     
     var isFolder: Bool {        //if false - it's request item
+        if let subfolder = isSubFolder, subfolder {
+            return true
+        }
         if item != nil, request == nil {
             return true
         }
@@ -60,6 +64,7 @@ class ItemResponse: Mappable {
         self.name <- map["name"]
         self.item <- map["item"]
         self.request <- map["request"]
+        self.isSubFolder <- map["_postman_isSubFolder"]
     }
     
     //MARK: - Additional model fields and functions
